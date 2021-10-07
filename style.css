@@ -1,0 +1,708 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-weight: 300;
+  font-size: 62.5%;
+  text-rendering: optimizeLegibility;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+body {
+  font-family: "press start 2p", sans-serif;
+  color: var(--lightSoft);
+}
+:root {
+  --lightBlue: #87ceeb;
+  --Blue: #0000ff;
+  --pureRed: #ff0000;
+  --lightRed: #fd3a31;
+  --hardRed: #eb0011;
+  --lightGreen: #00ff7f;
+  --lightSoft: #eee;
+  --light: #fffafa;
+  --darkgray: #444;
+  --hardBlack: #000;
+  --lightBlack: #0f0f0f;
+  --blackSoft: #222;
+}
+/* start styling to nintendo switch  */
+.main-continuer {
+  margin-top: 4rem;
+  width: 145rem;
+  height: 65rem;
+  display: flex;
+  flex-direction: row;
+}
+/*  blue joy con nintendo switch side  */
+.blue-side {
+  width: 22.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+/* Outer corner of blue joy con */
+.Outer-corner-blue-side {
+  background-color: var(--lightBlue);
+  width: 1.5rem;
+  height: 53rem;
+  margin-top: 6rem;
+}
+.blue-side-continuer {
+  width: 19.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/* top blue joy con Design  */
+.top-blue-side {
+  width: 100%;
+  height: 12rem;
+  display: flex;
+  flex-direction: row;
+}
+.top-blue-side div:first-child {
+  width: 2rem;
+  height: 10rem;
+  margin-top: 2rem;
+  background-color: var(--lightBlue);
+  border-top: 4rem solid black;
+}
+.top-blue-side div:nth-child(2) {
+  width: 1rem;
+  height: 9rem;
+  margin-top: 3.5rem;
+  background-color: var(--lightBlue);
+  border-top: 1.5rem solid black;
+}
+.top-blue-side div:nth-child(3) {
+  width: 2rem;
+  height: 10rem;
+  margin-top: 2rem;
+  background-color: var(--lightBlue);
+  border-top: 3rem solid black;
+}
+.top-blue-side div:nth-child(4) {
+  width: 2rem;
+  height: 12rem;
+  background-color: var(--lightBlue);
+  border-top: 3rem solid black;
+}
+.top-blue-side div:nth-child(5) {
+  width: 12.5rem;
+  height: 12rem;
+  background-color: var(--lightBlue);
+  border-top: 1.8rem solid black;
+  position: relative;
+}
+/* Making a negative sign */
+.top-blue-side div:nth-child(5)::after {
+  background-color: black;
+  content: "";
+  width: 6rem;
+  height: 2rem;
+  position: absolute;
+  bottom: 2rem;
+  right: 0;
+}
+/* blue joy con buttons */
+.center-main-blue-side {
+  background-color: var(--lightBlue);
+  width: 100%;
+  height: 45rem;
+}
+/* D-PAD */
+.DPAD {
+  width: 100%;
+  margin-top: 2rem;
+  height: 18rem;
+  margin-bottom: 8.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.top-DPAD {
+  display: flex;
+  justify-content: center;
+}
+.DPAD-continuer {
+  position: relative;
+}
+.DPAD-buttons {
+  cursor: pointer;
+  color: var(--hardBlack);
+  width: 5rem;
+  height: 5rem;
+  border: none;
+  border-radius: 2px;
+  position: absolute;
+  box-shadow: 0rem 0.2rem var(--darkgray);
+  background-color: var(--darkgray);
+}
+.DPAD-buttons:active {
+  top: 0.1rem;
+  box-shadow: none;
+}
+/* DPAD buttons Design */
+.arrows {
+  width: 0;
+  height: 0;
+}
+.center-arrows {
+  display: flex;
+  justify-content: space-around;
+}
+.bottom-arrow {
+  display: flex;
+  justify-content: center;
+}
+.arrows.top {
+  border-left: 2rem solid transparent;
+  border-right: 2rem solid transparent;
+  border-bottom: 3rem solid var(--hardBlack);
+  margin-left: 0.5rem;
+}
+.arrows.left {
+  border-top: 2rem solid transparent;
+  border-bottom: 2rem solid transparent;
+  border-right: 3rem solid var(--hardBlack);
+  margin-left: 1rem;
+}
+.arrows.right {
+  border-top: 2rem solid transparent;
+  border-bottom: 2rem solid transparent;
+  border-left: 3rem solid var(--hardBlack);
+  margin-left: 1rem;
+}
+.arrows.bottom {
+  border-left: 2rem solid transparent;
+  border-right: 2rem solid transparent;
+  border-top: 3rem solid var(--hardBlack);
+  margin-left: 0.5rem;
+}
+/* bottom blue joy con Design  */
+.bottom-blue-side {
+  width: 100%;
+  height: 9rem;
+  display: flex;
+  flex-direction: row;
+}
+.bottom-blue-side div {
+  background-color: var(--lightBlue);
+}
+.bottom-blue-side div:first-child {
+  width: 7.5rem;
+  height: 4.5rem;
+}
+.bottom-blue-side div:nth-child(2) {
+  width: 9rem;
+  height: 6.5rem;
+}
+.bottom-blue-side div:last-child {
+  width: 100%;
+  height: 8rem;
+}
+/* Inner corner of blue joy con */
+.Inner-corner-blue-side {
+  background-color: var(--lightBlue);
+  width: 1.5rem;
+  height: 100%;
+}
+/*  blue joy con nintendo switch side  */
+/* display of nintendo switch side */
+.center-side {
+  width: 100rem;
+  background-color: #222;
+  height: 100%;
+  border: 2rem solid #222;
+}
+.content {
+  width: 100%;
+  height: 100%;
+  background-color: var(--blackSoft);
+  border: 2.5rem solid black;
+  position: relative;
+}
+/* LAYOUT */
+.display {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: #191028;
+  transition: height 1s, width 1s, padding 1s, visibility 1s,
+    opacity 0.5s ease-out;
+}
+.startup {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: black;
+  transition: opacity 0 1s ease-in-out;
+}
+/* .startup:hover {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+} */
+.hidden {
+  display: none;
+}
+img {
+  width: 30rem;
+  height: 30rem;
+  align-self: center;
+}
+header {
+  position: relative;
+  height: 35%;
+  border-bottom: 1rem solid var(--lightSoft);
+}
+header .top {
+  display: flex;
+  justify-content: space-between;
+  background-color: red;
+}
+header .bot {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  height: 60%;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer {
+  margin-left: 6rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.left-section {
+  width: 52rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-section {
+  width: 52rem;
+  font-size: 2rem;
+}
+/* ELEMENTS STYLE */
+h1 {
+  font-size: 3.5rem;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+.number {
+  background: var(--lightSoft);
+  color: var(--darkgray);
+  font-size: 6rem;
+  width: 15rem;
+  padding: 3rem 0;
+  text-align: center;
+  align-self: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+.between {
+  font-size: 1.4rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+.again {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+.btn {
+  border: none;
+  background-color: #eee;
+  color: #222;
+  font-size: 2rem;
+  font-family: inherit;
+  padding: 2rem 3rem;
+  cursor: pointer;
+}
+.guess {
+  background: none;
+  border: 4px solid #eee;
+  font-family: inherit;
+  color: inherit;
+  font-size: 5rem;
+  padding: 2.5rem;
+  width: 25rem;
+  text-align: center;
+  display: block;
+  margin-bottom: 3rem;
+}
+.btn:hover {
+  background-color: #ccc;
+}
+
+.message {
+  margin-bottom: 8rem;
+  height: 3rem;
+}
+
+.label-score {
+  margin-bottom: 2rem;
+}
+footer p {
+  font-size: 2rem;
+}
+footer p:last-child {
+  margin-right: 10rem;
+  background-color: chartreuse;
+}
+.help {
+  margin-left: 0;
+
+  align-self: flex-start;
+}
+.help.up {
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-bottom: 1.5rem solid var(--lightSoft);
+  border-radius: 20%;
+}
+.help.bot {
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-top: 1.5rem solid var(--lightSoft);
+  border-radius: 20%;
+}
+.vert-move {
+  margin-top: 3rem;
+  width: 30rem;
+  height: 20rem;
+  align-self: center;
+}
+.gif {
+  width: 10rem;
+  height: 10rem;
+  cursor: pointer;
+}
+.info {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  align-self: center;
+  width: 70%;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: center;
+  color: chartreuse;
+}
+.lets-go {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  color: chartreuse;
+}
+.lets-go p {
+  font-size: 2rem;
+  align-self: center;
+  margin-right: 3rem;
+}
+/* animated */
+img.vert-move {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+img.vert-move {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* display of nintendo switch side */
+/*  red joy con nintendo switch side  */
+.red-side {
+  width: 22.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+/* Inner corner of red joy con */
+.Inner-corner-red-side {
+  background-color: var(--hardRed);
+  width: 1.5rem;
+  height: 100%;
+}
+/* red side content  */
+.red-side-continuer {
+  width: 19.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/* top red joy con Design  */
+.top-red-side {
+  width: 100%;
+  height: 12rem;
+  display: flex;
+  flex-direction: row;
+}
+.top-red-side div {
+  background-color: var(--hardRed);
+}
+.top-red-side div:first-child {
+  width: 13.5rem;
+  height: 100%;
+  border-top: 2rem solid var(--hardBlack);
+  position: relative;
+}
+
+.top-red-side div:nth-child(2) {
+  width: 2rem;
+  height: 10rem;
+  margin-top: 2rem;
+  border-top: 1.5rem solid var(--hardBlack);
+}
+.top-red-side div:nth-child(3) {
+  width: 1.5rem;
+  height: 10rem;
+  margin-top: 2rem;
+  border-top: 2.5rem solid var(--hardBlack);
+}
+.top-red-side div:nth-child(4) {
+  width: 1rem;
+  height: 8.5rem;
+  margin-top: 3.5rem;
+  border-top: 1rem solid var(--hardBlack);
+}
+.top-red-side div:nth-child(5) {
+  width: 1.5rem;
+  height: 8.5rem;
+  margin-top: 3.5rem;
+  border-top: 2.5rem solid var(--hardBlack);
+}
+/* Make a positive sign */
+.top-red-side div:first-child::before {
+  content: "";
+  width: 2rem;
+  height: 6rem;
+  background-color: var(--hardBlack);
+  position: absolute;
+  bottom: 0;
+  left: 2rem;
+}
+.top-red-side div:first-child::after {
+  content: "";
+  width: 6rem;
+  height: 2rem;
+  background-color: var(--hardBlack);
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+}
+/* ------ red joy con buttons ------ */
+.center-red-side-continuer {
+  background-color: var(--hardRed);
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+}
+/* red joy con action buttons */
+.Action-Buttons-continuer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  width: 100%;
+  height: 23rem;
+}
+.Action-Buttons.top-button {
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Action-Buttons.center {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.Action-Buttons.left-right {
+  height: 100%;
+  width: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.empty {
+  height: 2rem;
+  width: 2rem;
+  background-color: var(--lightBlack);
+  border: 1.05rem solid var(--lightBlack);
+  align-self: center;
+}
+.action-click:active .empty {
+  border: none;
+}
+.action-continuer {
+  height: 2rem;
+  width: 100%;
+  background-color: var(--lightBlack);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.action {
+  font-family: "Press Start 2P", sans-serif;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--lightBlack);
+  color: var(--light);
+  font-size: 2rem;
+}
+.action-click {
+  background-color: var(--hardRed);
+  border: none;
+  cursor: pointer;
+}
+/* bottom red joy con Design  */
+.bottom-red-side {
+  width: 100%;
+  height: 13%;
+  display: flex;
+  flex-direction: row;
+}
+.bottom-red-side div:first-child {
+  background-color: var(--hardRed);
+  width: 60%;
+  height: 100%;
+}
+.bottom-red-side div:nth-child(2) {
+  background-color: var(--hardRed);
+  width: 20%;
+  height: 6.5rem;
+}
+.bottom-red-side div:last-child {
+  background-color: var(--hardRed);
+  width: 20%;
+  height: 4.5rem;
+}
+
+/* Outer corner of red joy con */
+.Outer-corner-red-side {
+  background-color: var(--hardRed);
+  width: 1.6rem;
+  height: 53rem;
+  margin-top: 6rem;
+}
+/*  red joy con nintendo switch side  */
+/* ------------------------------------------------ */
+/* Shared styles */
+/* Stick Button */
+.LSB-continuer {
+  width: 10rem;
+  height: 9rem;
+  margin-top: 2rem;
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+.LSB {
+  background-color: var(--darkgray);
+  width: 2rem;
+  height: 4.5rem;
+  margin-left: 4rem;
+  box-shadow: -1rem 0rem black, 1rem 0 black;
+  z-index: 2;
+}
+.LSB-continuer div:first-child {
+  margin-top: 0.91rem;
+}
+.main-LSB {
+  background-color: var(--darkgray);
+  width: 90%;
+  align-self: center;
+  height: 2.4rem;
+  box-shadow: 0rem -1rem black, 0rem 1rem black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.LSB.right {
+  margin-top: 0;
+}
+.normalaiz {
+  margin-top: 0;
+}
+/* select and start buttons */
+.select-bottom {
+  background-color: var(--darkgray);
+  margin-top: 4.2rem;
+  margin-left: 1rem;
+  width: 6rem;
+  height: 6rem;
+  border: 1rem solid var(--hardBlack);
+}
+.start-bottom {
+  background-color: var(--darkgray);
+  margin-left: 12rem;
+  margin-top: 4rem;
+  width: 6rem;
+  height: 6rem;
+  border: 1rem solid var(--hardBlack);
+}
+/* Shared styles */
+
+@media only screen and (max-width: 1450px) {
+  html {
+    font-size: 44%;
+  }
+}
+@media only screen and (max-width: 1020px) {
+  html {
+    font-size: 30.96%;
+  }
+}
+@media only screen and (max-width: 720px) {
+  html {
+    font-size: 23.313%;
+  }
+}
+@media only screen and (max-width: 542px) {
+  html {
+    font-size: 14.57%;
+  }
+}
