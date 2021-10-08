@@ -99,7 +99,6 @@ function again() {
   document.querySelector(".number").style.width = "15rem";
 }
 window.document.addEventListener("DOMContentLoaded", function () {
-  // phoneAlert();
   startUp();
 });
 function startUp() {
@@ -112,4 +111,11 @@ function startUp() {
   setTimeout(function () {
     elem.style.display = "none";
   }, 2000);
+}
+function phoneAlert() {
+  if (window.innerHeight > window.innerWidth) {
+    if (window.innerHeight < "600") {
+      alert("Please use landscape!");
+    }
+  }
 }
